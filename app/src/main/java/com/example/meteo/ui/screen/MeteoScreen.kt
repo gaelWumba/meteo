@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.example.meteo.ui.screen.components.ActionBar
 import com.example.meteo.ui.screen.components.AirQuality
 import com.example.meteo.ui.screen.components.DailyForecast
+import com.example.meteo.ui.screen.components.WeeklyForecast
 import com.example.meteo.ui.theme.ColorBackground
 
 @Composable
@@ -38,6 +39,10 @@ fun MeteoScreen(){
                 modifier = Modifier.height(24.dp)
             )
             AirQuality()
+            Spacer(
+                modifier = Modifier.height(24.dp)
+            )
+            WeeklyForecast()
         }
     }
 }
